@@ -1,0 +1,183 @@
+---
+---
+
+@import "{{ site.theme }}";
+body {
+display: flex;
+align-items: center;
+justify-content: space-around;
+flex-direction: column-reverse;
+}
+
+#box {border:2px solid;
+width: 50vw;
+height: 80vh;
+max-width: 100vw;
+position: absolute;
+top:5%;
+left:25%;
+}
+
+#box div {
+width: 100%;
+height: 100%;
+position: absolute;     
+}
+
+.circle{
+  position: absolute;
+  width: 4%;
+  height:8%;
+  background-color: #ffe0b2;
+  border-radius: 50%;
+  border:2px solid black;
+}
+#left{
+  left:40%;
+  top:90%;
+}
+#right{
+  left:56%;
+  top:90%;
+}
+p.arrow{font-size: 3em;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  margin: 0;
+}
+p.arrow:hover{
+  cursor: pointer;
+}
+
+
+#a1{-webkit-clip-path: polygon( 10.738% 51.132% ,25.168% 20.943% ,29.698% 37.358% );
+	background-color: #009688;
+}
+.b #a1{
+	-webkit-clip-path: polygon( 19.799% 26.226% ,28.859% 19.811% ,30.201% 26.226% );
+  background-color: #00e676;
+}
+.c #a1{-webkit-clip-path: polygon( 39.597% 41.887% ,23.826% 53.208% ,38.087% 55.849% );
+	background-color: #5e35b1;
+}
+#a2{
+-webkit-clip-path: polygon( 25.168% 20.943% ,46.980% 34.717% ,34.228% 53.396% );
+	background-color: #01579b;
+}
+.b #a2{
+	-webkit-clip-path: polygon( 28.691% 19.434% ,43.289% 30.377% ,34.060% 48.113% );
+  background-color: #ffcdd2;
+}
+.c #a2{-webkit-clip-path: polygon( 39.25% 41.909% ,37.452% 56.015% ,49.861% 51.132% );
+	background-color:#5e35b1;
+  opacity: .7 ;
+
+}
+#a3{
+	-webkit-clip-path: polygon( 49.832% 13.019% ,40.268% 30.755% ,49.832% 76.415% );
+	background-color: #00acc1;
+}
+.b #a3{
+	-webkit-clip-path: polygon( 48.658% 19.623% ,60.067% 65.660% ,34.060% 48.113% );
+  background-color: rgba(200,100,155,1);
+}
+.c #a3{-webkit-clip-path: polygon( 39.262% 42.075% ,40.604% 40.189% ,49.161% 50.755% );
+	background-color: brown;
+}
+#a4{z-index: 2;
+	-webkit-clip-path: polygon( 49.832% 12.830% ,59.396% 30.566% ,49.832% 76.415%  );
+	background-color: #00acc1;
+}
+.b #a4{
+  -webkit-clip-path: polygon( 48.658% 19.434% ,67.450% 12.075% ,53.523% 39.434% );
+  background-color: rgba(100,55,66,1);;
+}
+.c #a4{-webkit-clip-path: polygon( 40.772% 40.189% ,42.114% 40.377% ,49.161% 50.566% );
+	background-color: brown;
+}
+#a5{z-index: 1;
+-webkit-clip-path: polygon( 74.497% 21.132% ,65.604% 53.774% ,53.020% 33.962% );
+	background-color: #01579b;
+}
+.b #a5{
+-webkit-clip-path: polygon( 61.913% 21.698% ,70.470% 18.302% ,53.356% 39.623% );
+  background-color: rgba(100,55,66,1);
+}
+.c #a5{-webkit-clip-path: polygon( 48.826% 51.321% ,41.443% 56.981% ,51.174% 57.736% );
+	background-color: #f8bbd0
+;
+}
+#a6{
+-webkit-clip-path: polygon( 74.497% 21.132% ,70.134% 37.358% ,89.094% 50.943% );
+	background-color: #009688;
+}
+.b #a6{
+-webkit-clip-path: polygon( 56.879% 53.340% ,70.638% 60.000% ,60% 65.372% );
+  background-color: #ff9e80;
+}
+.c #a6{
+	-webkit-clip-path: polygon( 42.369% 40.589% ,54.698% 24.340% ,49.464% 50.755% );
+	background-color: #5e35b1;
+}
+#a7{
+-webkit-clip-path: polygon( 50.000% 77.358% ,55.034% 87.358% ,44.799% 86.981% );
+	background-color: black;
+}
+.b #a7{
+	-webkit-clip-path: polygon( 60% 65.372% ,70.638% 60.000% ,65.604% 93.585% );
+  background-color: #1b1b1b;
+
+}
+.c #a7{
+-webkit-clip-path: polygon( 49.497% 50.755% ,58.221% 45.094% ,55.537% 52.830% );
+	background-color: #f8bbd0;
+}
+
+ .ltr :nth-child(1) {
+  transition: -webkit-clip-path 0.34s 0.22s cubic-bezier(0.7, 0.3, 0, 1), background-color 0.34s 0.02s; }
+ .ltr :nth-child(2) {
+  transition: -webkit-clip-path 0.38s 0.26s cubic-bezier(0.7, 0.3, 0, 1), background-color 0.38s 0.04s; }
+ .ltr :nth-child(3) {
+  transition: -webkit-clip-path 0.42s 0.30s cubic-bezier(0.7, 0.3, 0, 1), background-color 0.42s 0.06s; }
+ .ltr :nth-child(4) {
+  transition: -webkit-clip-path 0.46s 0.34s cubic-bezier(0.7, 0.3, 0, 1), background-color 0.46s 0.08s; }
+ .ltr :nth-child(5) {
+  transition: -webkit-clip-path 0.5s 0.38s cubic-bezier(0.7, 0.3, 0, 1), background-color 0.5s 0.1s; }
+ .ltr :nth-child(6) {
+  transition: -webkit-clip-path 0.54s 0.42s cubic-bezier(0.7, 0.3, 0, 1), background-color 0.54s 0.12s; }
+ .ltr :nth-child(7) {
+  transition: -webkit-clip-path 0.58s 0.46s cubic-bezier(0.7, 0.3, 0, 1), background-color 0.58s 0.14s; }
+
+ 
+.rtl  :nth-child(1) {
+  transition: -webkit-clip-path 0.58s 0.46s cubic-bezier(0.7, 0.3, 0, 1), background-color 0.58s 0.14s; }
+.rtl :nth-child(2) {
+  transition: -webkit-clip-path 0.54s 0.42s cubic-bezier(0.7, 0.3, 0, 1), background-color 0.54s 0.12s; }
+.rtl  :nth-child(3) {
+  transition: -webkit-clip-path 0.5s 0.38s cubic-bezier(0.7, 0.3, 0, 1), background-color 0.5s 0.1s; }
+.rtl  :nth-child(4) {
+  transition: -webkit-clip-path 0.46s 0.34s cubic-bezier(0.7, 0.3, 0, 1), background-color 0.46s 0.08s; }
+.rtl  :nth-child(5) {
+  transition: -webkit-clip-path 0.42s 0.32s cubic-bezier(0.7, 0.3, 0, 1), background-color 0.42s 0.06s; }
+.rtl  :nth-child(6) {
+  transition: -webkit-clip-path 0.38s 0.28s cubic-bezier(0.7, 0.3, 0, 1), background-color 0.38s 0.04s; }
+.rtl  :nth-child(7) {
+  transition: -webkit-clip-path 0.34s 0.24s cubic-bezier(0.7, 0.3, 0, 1), background-color 0.34s 0.02s; }
+
+
+/* #a1 {
+  transition: -webkit-clip-path 0.34s 0.22s cubic-bezier(0.7, 0.3, 0, 1), background-color 0.34s 0.02s; }
+ #a2(2) {
+  transition: -webkit-clip-path 0.38s 0.24s cubic-bezier(0.7, 0.3, 0, 1), background-color 0.38s 0.04s; }
+ #a3 {
+  transition: -webkit-clip-path 0.42s 0.26s cubic-bezier(0.7, 0.3, 0, 1), background-color 0.42s 0.06s; }
+ #a4 {
+  transition: -webkit-clip-path 0.46s 0.28s cubic-bezier(0.7, 0.3, 0, 1), background-color 0.46s 0.08s; }
+ #a5{
+  transition: -webkit-clip-path 0.5s 0.3s cubic-bezier(0.7, 0.3, 0, 1), background-color 0.5s 0.1s; }
+ #a6 {
+  transition: -webkit-clip-path 0.54s 0.32s cubic-bezier(0.7, 0.3, 0, 1), background-color 0.54s 0.12s; }
+ #a7 {
+  transition: -webkit-clip-path 0.58s 0.34s cubic-bezier(0.7, 0.3, 0, 1), background-color 0.58s 0.14s; }
+*/
