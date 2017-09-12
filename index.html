@@ -1,0 +1,85 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="spis.css">
+</head>
+<body >
+  <div id="box" class="ltr">
+   <div id="a1"></div>
+   <div id="a2"></div>
+   <div id="a3"></div>
+   <div id="a4"></div>
+   <div id="a5"></div>
+   <div id="a6"></div>
+   <div id="a7"></div>
+ </div>
+
+ <div class="circle" id='left' onclick="chng2()">
+  <p class="arrow"><</p>
+  <p style="margin:15px">RTL</P>
+  </div>
+
+  <div class="circle" id='right' onclick="chng1()">
+    <p class="arrow">></p>
+    <p style="margin:15px">LTR</p>
+  </div>
+
+
+  <script>
+
+
+  var i =1;
+  function chng1() {
+    var box = document.getElementById("box");
+
+    if(box.classList.contains('rtl'))
+     {    box.classList.remove("rtl");
+   box.classList.add("ltr"); 
+ }
+ 
+ if(i<=4 && i>=1)
+   { i=i+1;
+     if(i>3){i=1;}
+   }
+   if(i==2)
+   {
+     box.classList.add("b")
+   }
+   else if(i==3)
+   { 
+    box.classList.remove("b");
+    box.classList.add("c");
+  }
+  else if(i==1)
+  {
+   box.classList.remove("c");
+ }
+}
+
+function chng2() {
+  var box = document.getElementById("box")        
+  box.classList.remove("ltr");
+  box.classList.add("rtl");
+  
+  if(i>=1 && i<=3)
+  {
+    i=i-1;
+    if(i<1) {
+     i=3}
+   }                
+   if(i==3)
+   {
+     box.classList.add("c");
+   }
+   else if(i==1)
+   { 
+     box.classList.remove("b");
+   }
+   else if(i==2)
+   {
+    box.classList.remove("c");
+    box.classList.add("b");
+  }
+}     
+</script>
+</body>
+</html>
